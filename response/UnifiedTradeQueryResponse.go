@@ -18,6 +18,7 @@ type UnifiedTradeQueryResponse struct {
 	FeeType          string `xml:"fee_type"`
 	Attach           string `xml:"attach"`
 	BankType         string `xml:"bank_type"`
+	OutTradeNo       string `xml:"out_trade_no"`
 	BankBillNo       string `xml:"bank_billno"`
 	TimeEnd          string `xml:"time_end"`
 }

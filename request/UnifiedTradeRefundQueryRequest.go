@@ -6,9 +6,9 @@ import "encoding/xml"
 type UnifiedTradeRefundQueryRequest struct {
 	XMLName xml.Name `xml:"xml"`
 	CommonParam
-	TransactionId string `xml:"transaction_id"`
-	OutRefundNo   string `xml:"out_refund_no"`
-	RefundId      string `xml:"refund_id"`
+	TransactionId string `xml:"transaction_id,omitempty"`
+	OutRefundNo   string `xml:"out_refund_no,omitempty"`
+	RefundId      string `xml:"refund_id,omitempty"`
 }
 
 func (pwnr UnifiedTradeRefundQueryRequest) ServiceName() string {

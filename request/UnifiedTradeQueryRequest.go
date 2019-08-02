@@ -5,6 +5,7 @@ import "encoding/xml"
 type UnifiedTradeQueryRequest struct {
 	XMLName xml.Name `xml:"xml"`
 	CommonParam
+	TransactionId string `xml:"transaction_id"`
 }
 
 func (pwnr UnifiedTradeQueryRequest) ServiceName() string {

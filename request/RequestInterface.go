@@ -7,12 +7,12 @@ type Request interface {
 }
 
 type CommonParam struct {
-	Service    string `xml:"service"`
-	Version    string `xml:"version"`
-	Charset    string `xml:"charset"`
-	SignType   string `xml:"sign_type"`
-	MchId      string `xml:"mch_id"`
-	OutTradeNo string `xml:"out_trade_no"`
-	NonceStr   string `xml:"nonce_str"`
-	Sign       string `xml:"sign"`
+	Service    string `xml:"service,omitempty"`
+	Version    string `xml:"version,omitempty"`
+	Charset    string `xml:"charset,omitempty"`
+	SignType   string `xml:"sign_type,omitempty"`
+	MchId      string `xml:"mch_id,omitempty"`
+	OutTradeNo string `xml:"out_trade_no,omitempty"`
+	NonceStr   string `xml:"nonce_str,omitempty"`
+	Sign       string `xml:"sign,omitempty"`
 }

@@ -5,17 +5,17 @@ import "encoding/xml"
 type PayWeixinNativeRequest struct {
 	XMLName xml.Name `xml:"xml"`
 	CommonParam
-	DeviceInfo  string `xml:"device_info"`
-	Body        string `xml:"body"`
-	Attach      string `xml:"attach"`
-	TotalFee    string `xml:"total_fee"`
-	NotifyUrl   string `xml:"notify_url"`
-	TimeStart   string `xml:"time_start"`
-	TimeExpire  string `xml:"time_expire"`
-	OpUserId    string `xml:"op_user_id"`
-	GoodsTag    string `xml:"goods_tag"`
-	ProductId   string `xml:"product_id"`
-	MchCreateIp string `xml:"mch_create_ip"`
+	DeviceInfo  string `xml:"device_info,omitempty"`
+	Body        string `xml:"body,omitempty"`
+	Attach      string `xml:"attach,omitempty"`
+	TotalFee    string `xml:"total_fee,omitempty"`
+	NotifyUrl   string `xml:"notify_url,omitempty"`
+	TimeStart   string `xml:"time_start,omitempty"`
+	TimeExpire  string `xml:"time_expire,omitempty"`
+	OpUserId    string `xml:"op_user_id,omitempty"`
+	GoodsTag    string `xml:"goods_tag,omitempty"`
+	ProductId   string `xml:"product_id,omitempty"`
+	MchCreateIp string `xml:"mch_create_ip,omitempty"`
 }
 
 func (pwnr PayWeixinNativeRequest) ServiceName() string {
